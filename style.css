@@ -1,0 +1,81 @@
+:root{
+    --hand: #3B0A04;
+    --tick: #5C3604;
+}
+
+body{
+    background-image: url('img/2.jpg!d');
+    background-size: cover;
+}
+
+.clock-face {
+    border: 20px solid var(--tick);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    left: 15%;
+}
+.digital {
+    border: 4px solid var(--tick);
+    border-radius: 6px;
+    color: var(--tick);
+    font-size: 50px;
+    left: 24%;
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+}
+.hand {
+    top: 50%;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: all 0.06s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 3.42);
+    background-color: var(--hand);
+    border-radius: 5px;
+}
+.sec {
+    width: 50%;
+    height: 4px;
+    background-color: var(--hand);
+    opacity: .5;    
+}
+.mins {
+    width: 50%;
+    height: 8px;
+    background-color: var(--hand);
+    opacity: .8;
+}
+.hours {
+    width: 50%;
+    height: 10px;
+    background-color: var(--hand);
+    
+}
+
+.tick {
+    width: 5%;
+    height: 10px;
+    background-color: var(--tick);
+    top: 50%;
+    position: absolute;
+}
+.twelve {
+    transform-origin: 1025%;
+    transform: rotate(89deg);
+}
+.three {
+    transform-origin: 1000%;
+    transform: rotate(180deg);
+}
+.six {
+    transform-origin: 1000%;
+    transform: rotate(-90deg);
+}
+.nine {
+    transform-origin: 45%;
+    transform: rotate(180deg);
+}
